@@ -10,3 +10,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -finished all the categorical columns, numericals are the next
 -the data is good and balanced pretty good actually
+
+### day 3 update
+
+-finished all the numeric columns
+-dataset is well balanced and less of a challeneg already
