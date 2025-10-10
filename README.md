@@ -15,3 +15,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -finished all the numeric columns
 -dataset is well balanced and less of a challeneg already
+
+### day 4 update
+
+-fixed the borken python environment
+-made the prepration for the further data cleaning that includes the normalization for the distance based algos
