@@ -20,3 +20,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -fixed the borken python environment
 -made the prepration for the further data cleaning that includes the normalization for the distance based algos
+
+### day 5 update
+
+-made the two different datasets for the tree and distance based algos, alongside the seprate file for categorical and numerical columns
+-made the algorithm file and loaded the data with the train test split for tree based and distance based algos
