@@ -25,3 +25,9 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -made the two different datasets for the tree and distance based algos, alongside the seprate file for categorical and numerical columns
 -made the algorithm file and loaded the data with the train test split for tree based and distance based algos
+
+### day 6 update
+
+-predictions for the probablity and distance based algos done, 
+-tree based algos made perfect prediction, I made a few investigations for the data leakage to figure that out
+-so, tomorrow I will drop two features(failed, transaction_7d and risk_score) for the tree based algos only to confiem the leak
