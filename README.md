@@ -31,3 +31,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 -predictions for the probablity and distance based algos done, 
 -tree based algos made perfect prediction, I made a few investigations for the data leakage to figure that out
 -so, tomorrow I will drop two features(failed, transaction_7d and risk_score) for the tree based algos only to confiem the leak
+
+### day 7 update
+
+-identified the data leak for the algorithms and further testings willbe done
+-initial predictions for the dataset with keeping both the columns is done alongside the ANN and other algos
