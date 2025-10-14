@@ -36,3 +36,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -identified the data leak for the algorithms and further testings willbe done
 -initial predictions for the dataset with keeping both the columns is done alongside the ANN and other algos
+
+### day 8 update
+
+-predictions done by dropping both the feature
+- except for decision tree alogside the knn, no other model came even closer to the right learning
