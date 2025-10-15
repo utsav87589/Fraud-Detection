@@ -40,4 +40,9 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 ### day 8 update
 
 -predictions done by dropping both the feature
-- except for decision tree alogside the knn, no other model came even closer to the right learning
+-except for decision tree alogside the knn, no other model came even closer to the right learning
+
+### day 9 update
+
+-all the predictions part done, 
+-overall, the algorithms need at least one correlated feature for the correct predictions
