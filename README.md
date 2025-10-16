@@ -46,3 +46,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -all the predictions part done, 
 -overall, the algorithms need at least one correlated feature for the correct predictions
+
+### day 10 update
+
+-revised the Kmeans clustering algo, 
+-the new subtopic is descovered and is about pca, to reduce the dimensons effectively, need to investigate that part.
