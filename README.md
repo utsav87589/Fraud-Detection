@@ -51,3 +51,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -revised the Kmeans clustering algo, 
 -the new subtopic is descovered and is about pca, to reduce the dimensons effectively, need to investigate that part.
+
+### day 11 update
+
+-tried to revisit the pca and refined it
+-used the two most correlated features and results were good but yet to be done, before I move to the reverse engineering
