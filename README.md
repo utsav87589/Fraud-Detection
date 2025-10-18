@@ -56,3 +56,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -tried to revisit the pca and refined it
 -used the two most correlated features and results were good but yet to be done, before I move to the reverse engineering
+
+### day 12 update
+
+-clustering done without diving deep into the pca, 
+-hierarichal mean clustering is too slow, will split the data tomorrow and then go ahead
