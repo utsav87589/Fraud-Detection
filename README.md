@@ -61,3 +61,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -clustering done without diving deep into the pca, 
 -hierarichal mean clustering is too slow, will split the data tomorrow and then go ahead
+
+### day 13 update
+
+-all the clustering algorithms done on the dataset, taking only the numerical features, scaler and pca
+-tomorrow my plan will be to use Isolation forest and db scan to detect outliers overall
