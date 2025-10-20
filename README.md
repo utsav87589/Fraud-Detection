@@ -66,3 +66,8 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -all the clustering algorithms done on the dataset, taking only the numerical features, scaler and pca
 -tomorrow my plan will be to use Isolation forest and db scan to detect outliers overall
+
+### day 14 update
+
+-outliers detection (locasl and global) using the Isolation forest and LOF, completed
+-this dataset is completed officially with just the reporting and transfering learning for the outliers part left
