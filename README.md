@@ -71,3 +71,7 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -outliers detection (locasl and global) using the Isolation forest and LOF, completed
 -this dataset is completed officially with just the reporting and transfering learning for the outliers part left
+
+### day 15 update
+
+-starting making the final reporting in the powerpoint
