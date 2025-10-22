@@ -74,4 +74,4 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 ### day 15 update
 
--starting making the final reporting in the powerpoint
+-starting making the final reports for the predictions in the powerpoint
