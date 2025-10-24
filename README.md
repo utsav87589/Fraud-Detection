@@ -80,3 +80,7 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 
 -one of the five powerpoint presentation is completed
 -started working on the second one
+
+### day 17
+
+-all the reports for the predictions has been completed.
