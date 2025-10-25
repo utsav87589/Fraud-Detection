@@ -84,3 +84,9 @@ Fraud detection dataset, I am gonna do FE+EDA + Predictions for this dataset alo
 ### day 17
 
 -all the reports for the predictions has been completed.
+
+### day 18
+
+-unsupervised ML report completed.
+-apparently all the reports and the testing is done, the dataset is finished
+-later on small changes by the time will be happening.
