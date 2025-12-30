@@ -1,0 +1,7 @@
+## Ignore all the rough work and expirement code written in 'Jengaa_stuff' folder
+
+Jengaa_stuff/
+
+__pycache__/
+
+*.pyc
