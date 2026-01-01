@@ -24,6 +24,3 @@ def split_data_local(df, target_feature) :
 
     return X_train, X_test, y_train, y_test
 
-
-### function to split the categorical and numerical columns
-# def split_cat_num_cols(df, cols_cat, cols_num) : 
