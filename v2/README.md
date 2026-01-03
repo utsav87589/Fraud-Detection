@@ -18,3 +18,10 @@
 
 
 ===> Further v2 has divided sections to the dedicated Supervised and Unsupervised ml. for further information please refer to the individual and corresponding folders to learn more about them. each one has the dedicated docs section, which you can access and learn more in detail about the project.
+
+
+**important** : 
+
+- at some points in the projects I have added the information that either don't exist or it existed but have been modified, now in the first scenario it might be because it is still in the process and I have planned it or it is being tested that's why the information in the docs is there, for the second case I highly recommend to verify the **git history** to see the things.
+
+- for example at the time I have named the files and the folders in the (models) folder of the (supervised_ml) but the models aren't here yet, it's because they are planned ahead to keep up the load for the documenation light and spend less time during the core planning and the naming convention, while doing that particular phase of the project.
