@@ -25,3 +25,9 @@
 - at some points in the projects I have added the information that either don't exist or it existed but have been modified, now in the first scenario it might be because it is still in the process and I have planned it or it is being tested that's why the information in the docs is there, for the second case I highly recommend to verify the **git history** to see the things.
 
 - for example at the time I have named the files and the folders in the (models) folder of the (supervised_ml) but the models aren't here yet, it's because they are planned ahead to keep up the load for the documenation light and spend less time during the core planning and the naming convention, while doing that particular phase of the project.
+
+**Categorical columns** : 
+
+- Categorical features are handled individually based on cardinality, frequency distribution, and modeling context, rather than applying a uniform encoding strategy.
+
+ Categorical features are profiled first; those with low cardinality and balanced distributions are one-hot encoded in batch, while others are handled individually to prevent sparsity and noise.
