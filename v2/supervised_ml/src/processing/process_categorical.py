@@ -2,42 +2,33 @@ import pandas as pd
 import numpy as np
 
 
-### function to cehck whether we can apply the one hot encoding for the features in a batch
-### or they need manual handling
-def decide_ohe_strategy(
-    df,
-    max_categories=10,
-    min_class_ratio=0.25
-):
+### function to give us the n_unique values, class ratio, later in notebook file we decide whether to do batch encoding or individual
+def cat_summary(df) : 
 
-    categorical_cols = df.select_dtypes(include=["object", "category"]).columns
+    summary_cols = {}
 
-    auto_ohe_cols = []
-    manual_cols = []
+    for col in df.columns  : 
 
-    n_rows = len(df)
+        ### this logic has already been mentioned in another src file, but that was for the earlier stages of the project
 
-    for col in categorical_cols:
-        value_counts = df[col].value_counts(normalize=True)
-        n_unique = df[col].nunique()
+        summary_cols[col] = {
+            'n_unqiue' : df[col].nunique(),
+            'value_counts' : df[col].value_counts()
+        }
 
-        # criteria for SAFE batch OHE
-        if (
-            n_unique <= max_categories
-            and value_counts.min() >= (min_class_ratio / n_unique)
-        ):
-            auto_ohe_cols.append(col)
-        else:
-            manual_cols.append(col)
-
-    return auto_ohe_cols, manual_cols
+    return summary_cols
 
 
-### function to apply one hot encoding to the categorical features
-def one_hot(df, col) : 
 
-    dummies = pd.get_dummies(df[col], dtype = int, prefix = col, prefix_sep = '_', drop_first = True)
-    df = pd.concat([df, dummies], axis = 1)
+### function to apply one hot encoding to the categorical features, (assuming we separated the categorical columns earlier)
+def one_hot(df) : 
+
+    for col in df.columns : 
+
+        dummies = pd.get_dummies(df[col], dtype = int, prefix = col, prefix_sep = '_', drop_first = True)
+        df = pd.concat([df, dummies], axis = 1)
+
+        df = df.drop(col, axis = 1)
 
     return df
 
