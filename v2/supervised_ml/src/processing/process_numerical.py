@@ -17,10 +17,26 @@ def get_format(df, col, patterns) :
 ## function to split the feature into more features
 def split_col(df, col) : 
 
-    split_df_col = df[col].str.split(sep = ' ', expand = True)
-    new_cols = ['Date', 'Time']
+    ts = pd.to_datetime(df[col], errors = 'raise')
 
-    for i in range (split_df_col.shape[1]) : 
-        df[f"{col}_{new_cols[i]}"] = split_df_col[i]
+    df[f"{col}_year"] = ts.dt.year
+    df[f"{col}_month"] = ts.dt.month
+    df[f"{col}_day"] = ts.dt.day
+    df[f"{col}_hour"] = ts.dt.hour
 
     return df
+
+
+### function to distinguish between the dicrete and conitnuous categorical features
+def differentiate_discrete_continuous(df) : 
+
+    discrete_cols, continuous_cols = [], []
+
+    for col in df.columns : 
+        if (df[col].values.__contains__(0) == True) and (df[col].dtype == 'int64') : 
+            discrete_cols.append(col)
+
+        else : 
+            continuous_cols.append(col)
+
+    return discrete_cols, continuous_cols
