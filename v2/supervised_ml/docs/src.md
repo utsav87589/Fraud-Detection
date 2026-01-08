@@ -54,3 +54,12 @@
 ==> file : **split_feature**
 
 1. split_feature(df, force_num = None) : splites the numerical columns and the categorical columns from the dataset, the parameter (force_num) helps determining the folder which are categorical by the type but in reality they are numerical in nature (eg : Timestamp)
+
+
+==> file : **process_numerical.py**
+
+1. get_format(df, col, patterns) : gives the value counts for the specific pattern of the specific column (for the Timestamp column, to give us the different number of formats)
+
+2. split_col(df, col) : splits the column around a particular operator by converting into the date and time format (exclusively for the Time stamp column)
+
+3. differentiate_discrete_continuous(df) : differentiate between the discrete(non scaling) and continuous (scaling) numerical columns.
