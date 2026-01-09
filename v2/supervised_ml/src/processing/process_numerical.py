@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import scipy.stats as stat
+import pylab
+import seaborn as sns
 
 
 ### function to print the count for the different patterns of the entries in the record
@@ -27,16 +30,28 @@ def split_col(df, col) :
     return df
 
 
-### function to distinguish between the dicrete and conitnuous categorical features
-def differentiate_discrete_continuous(df) : 
 
-    discrete_cols, continuous_cols = [], []
+### function to plot the graphs : qq plot, distribution plot and box plot for the continuous columns
+def plot_graphs(df, cols) : 
 
-    for col in df.columns : 
-        if (df[col].values.__contains__(0) == True) and (df[col].dtype == 'int64') : 
-            discrete_cols.append(col)
+    for col in cols : 
 
-        else : 
-            continuous_cols.append(col)
+        print(f"column : {col}")
 
-    return discrete_cols, continuous_cols
+        #---------first plot, which is a hist plot
+        plt.figure(figsize = (12, 4))
+        plt.subplot(1, 3, 1)
+        plt.title('Hist plot')
+        df[col].hist()
+
+        #----------second one, which is a qq plot
+        plt.subplot(1, 3, 2)
+        plt.title('QQ plot')
+        stat.probplot(df[col], dist = 'norm', plot = pylab)
+        
+        #----------third plot, box plot
+        plt.subplot(1, 3, 3)
+        plt.title('Boxplot')
+        sns.boxplot(df[col])
+
+        plt.show()
