@@ -1,4 +1,4 @@
-Transaction_Type_Bank Transfer_1,Transaction_Type_Online_1,Transaction_Type_POS_1,Device_Type_Mobile_1,Device_Type_Tablet_1,Location_Mumbai_1,Location_New York_1,Location_Sydney_1,Location_Tokyo_1,Merchant_Category_Electronics_1,Merchant_Category_Groceries_1,Merchant_Category_Restaurants_1,Merchant_Category_Travel_1,Card_Type_Discover_1,Card_Type_Mastercard_1,Card_Type_Visa_1,Authentication_Method_OTP_1,Authentication_Method_PIN_1,Authentication_Method_Password_1
+Transaction_Type_Bank Transfer,Transaction_Type_Online,Transaction_Type_POS,Device_Type_Mobile,Device_Type_Tablet,Location_Mumbai,Location_New York,Location_Sydney,Location_Tokyo,Merchant_Category_Electronics,Merchant_Category_Groceries,Merchant_Category_Restaurants,Merchant_Category_Travel,Card_Type_Discover,Card_Type_Mastercard,Card_Type_Visa,Authentication_Method_OTP,Authentication_Method_PIN,Authentication_Method_Password
 0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0
 1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,1,0,0
 0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0
