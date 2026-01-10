@@ -55,3 +55,27 @@ def plot_graphs(df, cols) :
         sns.boxplot(df[col])
 
         plt.show()
+
+
+### function to plot the box plots for the features after scaling to verify the things
+def plot_graphs_post_scaling(df, df_copy) : 
+
+    cols = df.columns
+
+    for col in cols : 
+
+        plt.figure(figsize = (8, 4))
+        plt.subplot(1, 2, 1)
+        plt.title(col)
+        sns.boxplot(df[col])
+        plt.xlabel("")
+        plt.ylabel("")
+
+        plt.subplot(1, 2, 2)
+        plt.title('Boxplot')
+        sns.boxplot(df_copy[col])
+        plt.xlabel("")
+        plt.ylabel("")
+
+
+    plt.show()
