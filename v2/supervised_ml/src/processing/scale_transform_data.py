@@ -24,7 +24,7 @@ def check_outliers(df, col) :
 
 
 ### function to apply the min max scaler and then save it
-def apply_scaler(df, scaler_path = None, scaler = None) : 
+def apply_scaler(df, scaler_path = None) : 
 
     cols_to_scale = []
 
@@ -32,15 +32,17 @@ def apply_scaler(df, scaler_path = None, scaler = None) :
         if not (df[col].nunique() <= 2) : 
             cols_to_scale.append(col)
 
-    if (scaler_path is not None) and (scaler is None):
+    if (scaler_path is None):
+
+        scaler_path = '../scalers/scaler.pkl'
 
         scaler = MinMaxScaler(feature_range = (0, 1))
         df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
         joblib.dump(scaler, scaler_path)
 
-    elif (scaler_path is None) and (scaler is not None) : 
+    else : 
 
-            scaler = scaler
+            scaler = joblib.load(scaler_path)
             df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
 
     return df
