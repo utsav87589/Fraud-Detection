@@ -30,7 +30,7 @@
 
 ### Subfolder : probablity
 
-- it has the distance based models, that were trained and tested on the tree based data, because the Naive Baye algorithm like the tree based models works on the Raw and Unscaled data as well
+- it has the probablity based models, that were trained and tested on the tree based data, because the Naive Baye algorithm is like the tree based models and works on the Raw and Unscaled data as well
 
 - the model is : 
 1. nb.pkl : Naive Baye's classification
