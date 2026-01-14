@@ -68,3 +68,19 @@ def other_model_predict_valid(X_valid, y_pred_best, other_model_path) :
     y_pred = model.predict(X_valid)
 
     plot_metrices(y_pred_best, y_pred)
+
+
+### function to do the comparison for the best models predictions
+def compare_models_on_valid(y_pred_best_tree, y_pred_best_distance, y_true) : 
+
+    ### 1. tree vs distance
+    plot_metrices(y_pred_best_distance, y_pred_best_tree)
+
+    ### 2. distance vs tree
+    plot_metrices(y_pred_best_tree, y_pred_best_distance)
+
+    ### 3. distance vs y_true
+    plot_metrices(y_pred_best_distance, y_true)
+
+    ### 3. tree vs y_true
+    plot_metrices(y_pred_best_tree, y_true)
