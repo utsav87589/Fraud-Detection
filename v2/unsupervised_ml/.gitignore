@@ -1,0 +1,7 @@
+## Ignore all the rough work and expirement code in the 'test_files'
+
+test_files/
+
+**/__pycache__/
+
+*.pyc
