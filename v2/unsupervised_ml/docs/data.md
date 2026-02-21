@@ -11,4 +11,4 @@
 
 - to undertsand more, look at the figure below : 
 
-![Architecture Diagram](figure.drawio.png.png)
+![Architecture Diagram](figure.drawio.png)
