@@ -21,4 +21,10 @@
 - check_shape(df) : check only the shape of the dataset (obviously after the pca, we cannot check the nan and other things, as they would be unnecessary at this point)
 
 2. clustering.py : 
-- 
+- In the clustering.py file, we use the data and then find the values of the parameters (for eg : the value of k, for the kmeans clustering, eps for the db scan) and then use those values to make the clusters.
+- The idea to find the the values is because we get an idea of how the data might behave rather than blindly trusting the default values,
+- For the HM (aka agglomerative clustering) we took the sample of 3000 records only for the dendogram and clusters as well, as it requires more resources to process through.
+
+
+3. PCA.py : 
+- In the pca.py file, we have the functions that get the variance of the entire dataset before reducing it to the 2 dimensions for the purpose of the visualisation, now the idea is to get the hint of how much accurate the clusters might be, we also have the function to reduce the dimensions to 2 and to check the shape as well.
